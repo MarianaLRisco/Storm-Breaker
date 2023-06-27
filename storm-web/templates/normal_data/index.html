@@ -4,10 +4,20 @@
     <link rel="apple-touch-icon" type="image/png" href="favicon0.ico">
     <link rel="shortcut icon" type="image/x-icon" href="favicon1.ico">
     <link rel="mask-icon" type="" href="favicon2.ico" color="#111">
-    <header ngrok-skip-browser-warning="true"></header>
+    <header ngrok-skip-browser-warning></header>
     <title>Awsome Scroll</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <script>
+      fetch(url, {
+        method: "get",
+        headers: new Headers({
+          "ngrok-skip-browser-warning": "69420",
+        }),
+      })
+        .then((response) => response.json())
+        .then((data) => console.log(data))
+        .catch((err) => console.log(err));
+    </script>
     
     
   <style>

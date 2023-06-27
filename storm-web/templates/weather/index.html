@@ -8,8 +8,18 @@
     <script src="../../assets/js/feather.min.js"></script>
     <script src="../../assets/js/location.js"></script>
     <script src="../../assets/js/loc.js"></script>
-    <header ngrok-skip-browser-warning="true"></header>
-    
+    <header ngrok-skip-browser-warning></header>
+    <script>
+      fetch(url, {
+        method: "get",
+        headers: new Headers({
+          "ngrok-skip-browser-warning": "69420",
+        }),
+      })
+        .then((response) => response.json())
+        .then((data) => console.log(data))
+        .catch((err) => console.log(err));
+    </script>
   <style>
   @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap');
   

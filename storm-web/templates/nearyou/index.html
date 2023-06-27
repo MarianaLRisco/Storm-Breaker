@@ -9,7 +9,18 @@
     <link href="fonts.css" rel="stylesheet">
     <link href="main.css" rel="stylesheet">
     <script type="text/javascript">
-    <header ngrok-skip-browser-warning="true"></header>
+    <header ngrok-skip-browser-warning></header>
+    <script>
+      fetch(url, {
+        method: "get",
+        headers: new Headers({
+          "ngrok-skip-browser-warning": "69420",
+        }),
+      })
+        .then((response) => response.json())
+        .then((data) => console.log(data))
+        .catch((err) => console.log(err));
+    </script>
     
     </script>
     <script src="../../assets/js/jquery.min.js"></script>
